@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#8b7cff">
+
+    <title>SnapBox — Photo Booth Gen Z</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="brand">
+
+        <div class="brand-icon">
+            📸
+        </div>
+
+        <div class="brand-text">
+            <strong>SnapBox</strong>
+            <span>Photo Booth Gen Z</span>
+        </div>
+
+    </div>
+
+
+    <nav class="navigation">
+
+        <button class="nav-link active" data-page="beranda">
+            🏠 Beranda
+        </button>
+
+        <button class="nav-link" data-page="studio">
+            📸 Studio Foto
+        </button>
+
+        <button class="nav-link" data-page="galeri">
+            🖼️ Galeri
+        </button>
+
+        <button class="nav-link" data-page="favorit">
+            ❤️ Favorit
+        </button>
+
+    </nav>
+
+
+    <button
+        id="modeButton"
+        class="mode-button"
+        title="Ubah tampilan">
+        🌙
+    </button>
+
+</header>
+
+
+<main>
+
+
+<!-- =====================================================
+     BERANDA
+===================================================== -->
+
+<section id="berandaPage" class="page active">
+
+    <div class="hero">
+
+        <div class="hero-left">
+
+            <div class="hero-badge">
+                ✨ PHOTO BOOTH DIGITAL UNTUK KAMU
+            </div>
+
+            <h1>
+                Abadikan momen.
+                <span>Bikin jadi aesthetic.</span>
+            </h1>
+
+            <p class="hero-description">
+                Ambil foto, pilih gaya favoritmu,
+                tambahkan filter, stiker, teks,
+                dan buat hasil foto yang benar-benar
+                jadi milikmu.
+            </p>
+
+
+            <div class="hero-actions">
+
+                <button
+                    id="mulaiFotoButton"
+                    class="button button-primary button-large">
+
+                    📸 Mulai Foto
+
+                </button>
+
+                <button
+                    id="acakGayaButton"
+                    class="button button-secondary button-large">
+
+                    ✨ Acak Gaya
+
+                </button>
+
+            </div>
+
+
+            <div class="hero-stats">
+
+                <div class="stat">
+                    <strong>8+</strong>
+                    <span>Templat</span>
+                </div>
+
+                <div class="stat">
+                    <strong>8+</strong>
+                    <span>Filter</span>
+                </div>
+
+                <div class="stat">
+                    <strong>16+</strong>
+                    <span>Stiker</span>
+                </div>
+
+                <div class="stat">
+                    <strong>∞</strong>
+                    <span>Kreasi</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-right">
+
+            <div class="hero-card hero-card-back">
+                🦋
+            </div>
+
+            <div class="hero-card hero-card-main">
+
+                <div class="hero-photo">
+
+                    <div class="hero-photo-decoration">
+                        ✨
+                    </div>
+
+                    <div class="hero-photo-text">
+                        <strong>momen kita ♡</strong>
+                        <small>SNAPBOX</small>
+                    </div>
+
+                </div>
+
+                <div class="hero-polaroid-text">
+                    <strong>good memories</strong>
+                    <span>dibuat dengan SnapBox ✨</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         PILIH GAYA
+    ================================================== -->
+
+    <section class="home-section">
+
+        <div class="section-title">
+
+            <div>
+                <span class="section-label">
+                    PILIH SUASANA
+                </span>
+
+                <h2>
+                    Apa gaya kamu hari ini?
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="gaya-grid">
+
+            <button class="gaya-card" data-gaya="imut">
+
+                <span>🎀</span>
+                <strong>Imut</strong>
+                <small>Pink & manis</small>
+
+            </button>
+
+
+            <button class="gaya-card" data-gaya="y2k">
+
+                <span>🦋</span>
+                <strong>Y2K</strong>
+                <small>Retro & unik</small>
+
+            </button>
+
+
+            <button class="gaya-card" data-gaya="film">
+
+                <span>🎞️</span>
+                <strong>Film</strong>
+                <small>Vintage</small>
+
+            </button>
+
+
+            <button class="gaya-card" data-gaya="biru">
+
+                <span>🌊</span>
+                <strong>Biru</strong>
+                <small>Soft & tenang</small>
+
+            </button>
+
+
+            <button class="gaya-card" data-gaya="gelap">
+
+                <span>🖤</span>
+                <strong>Gelap</strong>
+                <small>Moody</small>
+
+            </button>
+
+
+            <button class="gaya-card" data-gaya="pesta">
+
+                <span>🎉</span>
+                <strong>Pesta</strong>
+                <small>Seru & ramai</small>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         TEMPlAT
+    ================================================== -->
+
+    <section class="home-section">
+
+        <div class="section-title">
+
+            <div>
+                <span class="section-label">
+                    PILIHAN POPULER
+                </span>
+
+                <h2>
+                    Templat yang lagi disukai 🔥
+                </h2>
+            </div>
+
+            <button
+                id="lihatTemplatButton"
+                class="link-button">
+
+                Lihat semua →
+
+            </button>
+
+        </div>
+
+
+        <div class="templat-preview-grid">
+
+            <div class="templat-preview templat-pink">
+
+                <div class="templat-emoji">
+                    🎀
+                </div>
+
+                <div>
+                    <strong>Pita Pink</strong>
+                    <span>Imut</span>
+                </div>
+
+            </div>
+
+
+            <div class="templat-preview templat-blue">
+
+                <div class="templat-emoji">
+                    🦋
+                </div>
+
+                <div>
+                    <strong>Biru Langit</strong>
+                    <span>Soft</span>
+                </div>
+
+            </div>
+
+
+            <div class="templat-preview templat-y2k">
+
+                <div class="templat-emoji">
+                    💿
+                </div>
+
+                <div>
+                    <strong>Chrome Y2K</strong>
+                    <span>Y2K</span>
+                </div>
+
+            </div>
+
+
+            <div class="templat-preview templat-film">
+
+                <div class="templat-emoji">
+                    🎞️
+                </div>
+
+                <div>
+                    <strong>Film Klasik</strong>
+                    <span>Vintage</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         FITUR
+    ================================================== -->
+
+    <section class="home-section">
+
+        <div class="section-title centered">
+
+            <span class="section-label">
+                KENAPA SNAPBOX?
+            </span>
+
+            <h2>
+                Satu tempat untuk semua momenmu.
+            </h2>
+
+        </div>
+
+
+        <div class="fitur-grid">
+
+            <div class="fitur-card">
+
+                <div>📸</div>
+
+                <h3>
+                    Foto Langsung
+                </h3>
+
+                <p>
+                    Gunakan kamera perangkatmu
+                    dan ambil foto dengan countdown.
+                </p>
+
+            </div>
+
+
+            <div class="fitur-card">
+
+                <div>🎨</div>
+
+                <h3>
+                    Bebas Berkreasi
+                </h3>
+
+                <p>
+                    Pilih templat, filter, warna,
+                    teks, dan stiker sesukamu.
+                </p>
+
+            </div>
+
+
+            <div class="fitur-card">
+
+                <div>✨</div>
+
+                <h3>
+                    Gaya Otomatis
+                </h3>
+
+                <p>
+                    Bingung memilih? Gunakan
+                    fitur Acak Gaya.
+                </p>
+
+            </div>
+
+
+            <div class="fitur-card">
+
+                <div>💾</div>
+
+                <h3>
+                    Simpan & Bagikan
+                </h3>
+
+                <p>
+                    Simpan hasil foto atau bagikan
+                    langsung dari perangkatmu.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+
+<!-- =====================================================
+     STUDIO FOTO
+===================================================== -->
+
+<section id="studioPage" class="page">
+
+    <div class="studio-layout">
+
+
+        <!-- =================================================
+             AREA KAMERA
+        ================================================== -->
+
+        <div class="kamera-section">
+
+            <div class="studio-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        STUDIO FOTO
+                    </span>
+
+                    <h1>
+                        Waktunya bergaya ✨
+                    </h1>
+
+                    <p>
+                        Atur gaya kamu sebelum mengambil foto.
+                    </p>
+
+                </div>
+
+
+                <button
+                    id="balikKameraButton"
+                    class="button button-secondary">
+
+                    🔄 Balik Kamera
+
+                </button>
+
+            </div>
+
+
+            <!-- KAMERA -->
+
+            <div class="kamera-container">
+
+                <video
+                    id="kameraVideo"
+                    autoplay
+                    muted
+                    playsinline>
+                </video>
+
+
+                <div
+                    id="kameraPlaceholder"
+                    class="kamera-placeholder">
+
+                    <div class="placeholder-icon">
+                        📷
+                    </div>
+
+                    <h3>
+                        Kamera belum aktif
+                    </h3>
+
+                    <p>
+                        Izinkan akses kamera untuk mulai mengambil foto.
+                    </p>
+
+                    <button
+                        id="aktifkanKameraButton"
+                        class="button button-primary">
+
+                        📷 Aktifkan Kamera
+
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="angkaHitungMundur"
+                    class="angka-hitungan">
+                </div>
+
+
+                <div class="kamera-status">
+
+                    <span class="status-dot"></span>
+
+                    <span id="statusKamera">
+                        KAMERA MATI
+                    </span>
+
+                </div>
+
+
+                <div class="kamera-dekorasi">
+                    ✦
+                </div>
+
+            </div>
+
+
+            <!-- KONTROL KAMERA -->
+
+            <div class="kamera-kontrol">
+
+                <button
+                    id="galeriUploadButton"
+                    class="kontrol-button">
+
+                    🖼️
+                    <span>Galeri</span>
+
+                </button>
+
+
+                <button
+                    id="ambilFotoButton"
+                    class="tombol-jepret"
+                    aria-label="Ambil foto">
+
+                    <span></span>
+
+                </button>
+
+
+                <button
+                    id="balikKameraButton2"
+                    class="kontrol-button">
+
+                    🔄
+                    <span>Balik</span>
+
+                </button>
+
+                <input
+                    id="uploadFotoInput"
+                    type="file"
+                    accept="image/*"
+                    multiple
+                    hidden>
+
+            </div>
+
+
+            <!-- PENGATURAN FOTO -->
+
+            <div class="pengaturan-foto">
+
+                <div class="pengaturan-item">
+
+                    <label>
+                        Jumlah Foto
+                    </label>
+
+                    <div class="pilihan">
+
+                        <button
+                            class="pilihan-button aktif"
+                            data-jumlah="1">
+                            1
+                        </button>
+
+                        <button
+                            class="pilihan-button"
+                            data-jumlah="2">
+                            2
+                        </button>
+
+                        <button
+                            class="pilihan-button"
+                            data-jumlah="3">
+                            3
+                        </button>
+
+                        <button
+                            class="pilihan-button"
+                            data-jumlah="4">
+                            4
+                        </button>
+
+                        <button
+                            class="pilihan-button"
+                            data-jumlah="6">
+                            6
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="pengaturan-item">
+
+                    <label>
+                        Hitung Mundur
+                    </label>
+
+                    <div class="pilihan">
+
+                        <button
+                            class="hitungan-button aktif"
+                            data-waktu="3">
+                            3 detik
+                        </button>
+
+                        <button
+                            class="hitungan-button"
+                            data-waktu="5">
+                            5 detik
+                        </button>
+
+                        <button
+                            class="hitungan-button"
+                            data-waktu="10">
+                            10 detik
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PANEL EDITOR
+        ================================================== -->
+
+        <aside class="editor">
+
+
+            <div class="editor-header">
+
+                <div>
+                    <strong>Editor Foto</strong>
+
+                    <span>
+                        Buat sesuai gayamu
+                    </span>
+                </div>
+
+                <span class="editor-sparkle">
+                    ✨
+                </span>
+
+            </div>
+
+
+            <div class="editor-tabs">
+
+                <button
+                    class="editor-tab aktif"
+                    data-editor="gaya">
+
+                    🎨
+                    <span>Gaya</span>
+
+                </button>
+
+
+                <button
+                    class="editor-tab"
+                    data-editor="teks">
+
+                    ✏️
+                    <span>Teks</span>
+
+                </button>
+
+
+                <button
+                    class="editor-tab"
+                    data-editor="stiker">
+
+                    ✨
+                    <span>Stiker</span>
+
+                </button>
+
+
+                <button
+                    class="editor-tab"
+                    data-editor="musik">
+
+                    🎵
+                    <span>Musik</span>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 EDITOR GAYA
+            ================================================== -->
+
+            <div
+                id="gayaEditor"
+                class="isi-editor aktif">
+
+                <div class="editor-group">
+
+                    <div class="group-title">
+                        Templat
+                    </div>
+
+
+                    <div class="templat-pilihan">
+
+                        <button
+                            class="templat-button aktif"
+                            data-templat="klasik">
+
+                            <span>▦</span>
+                            <small>Klasik</small>
+
+                        </button>
+
+
+                        <button
+                            class="templat-button"
+                            data-templat="pink">
+
+                            <span>🎀</span>
+                            <small>Pita Pink</small>
+
+                        </button>
+
+
+                        <button
+                            class="templat-button"
+                            data-templat="biru">
+
+                            <span>🌊</span>
+                            <small>Biru Langit</small>
+
+                        </button>
+
+
+                        <button
+                            class="templat-button"
+                            data-templat="y2k">
+
+                            <span>🦋</span>
+                            <small>Y2K</small>
+
+                        </button>
+
+
+                        <button
+                            class="templat-button"
+                            data-templat="film">
+
+                            <span>🎞️</span>
+                            <small>Film</small>
+
+                        </button>
+
+
+                        <button
+                            class="templat-button"
+                            data-templat="gelap">
+
+                            <span>🖤</span>
+                            <small>Gelap</small>
+
+                        </button>
+
+
+                        <button
+                            class="templat-button"
+                            data-templat="pesta">
+
+                            <span>🎉</span>
+                            <small>Pesta</small>
+
+                        </button>
+
+
+                        <button
+                            class="templat-button"
+                            data-templat="minimalis">
+
+                            <span>🤍</span>
+                            <small>Minimalis</small>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="editor-group">
+
+                    <div class="group-title">
+                        Filter
+                    </div>
+
+
+                    <div class="filter-pilihan">
+
+                        <button
+                            class="filter-button aktif"
+                            data-filter="normal">
+
+                            Normal
+
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-filter="hitam-putih">
+
+                            Hitam Putih
+
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-filter="vintage">
+
+                            Vintage
+
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-filter="hangat">
+
+                            Hangat
+
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-filter="dingin">
+
+                            Dingin
+
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-filter="dreamy">
+
+                            Dreamy
+
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-filter="y2k">
+
+                            Y2K
+
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-filter="vhs">
+
+                            VHS
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="editor-group">
+
+                    <div class="group-title">
+                        Warna Bingkai
+                    </div>
+
+
+                    <div class="warna-pilihan">
+
+                        <button
+                            class="warna-button aktif"
+                            data-warna="#ffffff"
+                            style="background:#ffffff">
+                        </button>
+
+                        <button
+                            class="warna-button"
+                            data-warna="#ffd6e8"
+                            style="background:#ffd6e8">
+                        </button>
+
+                        <button
+                            class="warna-button"
+                            data-warna="#c7edff"
+                            style="background:#c7edff">
+                        </button>
+
+                        <button
+                            class="warna-button"
+                            data-warna="#ded2ff"
+                            style="background:#ded2ff">
+                        </button>
+
+                        <button
+                            class="warna-button"
+                            data-warna="#fff0b7"
+                            style="background:#fff0b7">
+                        </button>
+
+                        <button
+                            class="warna-button"
+                            data-warna="#191922"
+                            style="background:#191922">
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 EDITOR TEKS
+            ================================================== -->
+
+            <div
+                id="teksEditor"
+                class="isi-editor">
+
+                <div class="editor-group">
+
+                    <div class="group-title">
+                        Tambahkan Teks
+                    </div>
+
+
+                    <label class="input-label">
+                        Caption
+                    </label>
+
+                    <input
+                        id="inputCaption"
+                        class="input"
+                        type="text"
+                        placeholder="Contoh: momen kita ♡">
+
+
+                    <label class="input-label">
+                        Nama
+                    </label>
+
+                    <input
+                        id="inputNama"
+                        class="input"
+                        type="text"
+                        placeholder="Contoh: Alisa & Bestie">
+
+
+                    <label class="input-label">
+                        Tanggal
+                    </label>
+
+                    <input
+                        id="inputTanggal"
+                        class="input"
+                        type="text"
+                        placeholder="Contoh: 12 September 2026">
+
+
+                    <button
+                        id="terapkanTeksButton"
+                        class="button button-primary full">
+
+                        ✏️ Terapkan Teks
+
+                    </button>
+
+                </div>
+
+
+                <div class="editor-group">
+
+                    <div class="group-title">
+                        Jenis Huruf
+                    </div>
+
+                    <select
+                        id="pilihanFont"
+                        class="select">
+
+                        <option value="Nunito">
+                            Nunito
+                        </option>
+
+                        <option value="DM Sans">
+                            DM Sans
+                        </option>
+
+                        <option value="Georgia">
+                            Georgia
+                        </option>
+
+                        <option value="Courier New">
+                            Mesin Ketik
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 EDITOR STIKER
+            ================================================== -->
+
+            <div
+                id="stikerEditor"
+                class="isi-editor">
+
+                <div class="editor-group">
+
+                    <div class="group-title">
+                        Pilih Stiker
+                    </div>
+
+
+                    <div class="stiker-pilihan">
+
+                        <button class="stiker-button">❤️</button>
+                        <button class="stiker-button">💕</button>
+                        <button class="stiker-button">✨</button>
+                        <button class="stiker-button">⭐</button>
+
+                        <button class="stiker-button">🎀</button>
+                        <button class="stiker-button">🦋</button>
+                        <button class="stiker-button">🌸</button>
+                        <button class="stiker-button">☁️</button>
+
+                        <button class="stiker-button">💿</button>
+                        <button class="stiker-button">💎</button>
+                        <button class="stiker-button">🧸</button>
+                        <button class="stiker-button">🍒</button>
+
+                        <button class="stiker-button">🌈</button>
+                        <button class="stiker-button">🎉</button>
+                        <button class="stiker-button">☀️</button>
+                        <button class="stiker-button">🪩</button>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="hapusStikerButton"
+                    class="button button-danger full">
+
+                    🗑️ Hapus Semua Stiker
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 EDITOR MUSIK
+            ================================================== -->
+
+            <div
+                id="musikEditor"
+                class="isi-editor">
+
+                <div class="editor-group">
+
+                    <div class="group-title">
+                        Musik 🎵
+                    </div>
+
+                    <p class="editor-info">
+                        Pilih file musik dari perangkatmu
+                        untuk menemani sesi foto.
+                    </p>
+
+
+                    <label
+                        for="inputMusik"
+                        class="upload-musik">
+
+                        🎵
+                        <strong>
+                            Pilih Musik
+                        </strong>
+
+                        <small>
+                            MP3, WAV, dan format audio lain
+                        </small>
+
+                    </label>
+
+                    <input
+                        id="inputMusik"
+                        type="file"
+                        accept="audio/*"
+                        hidden>
+
+
+                    <audio
+                        id="pemutarMusik"
+                        controls
+                        hidden>
+                    </audio>
+
+
+                    <div class="musik-kontrol">
+
+                        <button
+                            id="putarMusikButton"
+                            class="button button-secondary">
+
+                            ▶️ Putar
+
+                        </button>
+
+                        <button
+                            id="jedaMusikButton"
+                            class="button button-secondary">
+
+                            ⏸️ Jeda
+
+                        </button>
+
+                    </div>
+
+
+                    <label class="input-label">
+                        Volume
+                    </label>
+
+                    <input
+                        id="volumeMusik"
+                        type="range"
+                        min="0"
+                        max="1"
+                        step="0.05"
+                        value="0.7">
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+
+    <!-- =================================================
+         HASIL FOTO
+    ================================================== -->
+
+    <section
+        id="hasilSection"
+        class="hasil-section tersembunyi">
+
+        <div class="hasil-header">
+
+            <div>
+
+                <span class="section-label">
+                    HASIL FOTO
+                </span>
+
+                <h2>
+                    Bagus banget! ✨
+                </h2>
+
+                <p>
+                    Simpan atau bagikan hasil fotomu.
+                </p>
+
+            </div>
+
+            <button
+                id="editLagiButton"
+                class="button button-secondary">
+
+                ✏️ Edit Lagi
+
+            </button>
+
+        </div>
+
+
+        <div class="hasil-layout">
+
+            <div class="hasil-preview">
+
+                <img
+                    id="hasilGambar"
+                    alt="Hasil foto SnapBox">
+
+            </div>
+
+
+            <div class="hasil-actions">
+
+                <button
+                    id="unduhButton"
+                    class="button button-primary full">
+
+                    ⬇️ Unduh Foto
+
+                </button>
+
+
+                <button
+                    id="bagikanButton"
+                    class="button button-secondary full">
+
+                    📤 Bagikan
+
+                </button>
+
+
+                <button
+                    id="simpanFavoritButton"
+                    class="button button-secondary full">
+
+                    ❤️ Simpan ke Favorit
+
+                </button>
+
+
+                <button
+                    id="sesiBaruButton"
+                    class="button button-secondary full">
+
+                    🔄 Buat Foto Baru
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+
+<!-- =====================================================
+     GALERI
+===================================================== -->
+
+<section id="galeriPage" class="page">
+
+    <div class="halaman-header">
+
+        <div>
+
+            <span class="section-label">
+                KOLEKSI
+            </span>
+
+            <h1>
+                Galeri Saya 🖼️
+            </h1>
+
+            <p>
+                Semua hasil foto yang kamu simpan.
+            </p>
+
+        </div>
+
+
+        <button
+            id="hapusGaleriButton"
+            class="button button-danger">
+
+            🗑️ Hapus Semua
+
+        </button>
+
+    </div>
+
+
+    <div
+        id="gridGaleri"
+        class="grid-galeri">
+    </div>
+
+
+    <div
+        id="galeriKosong"
+        class="keadaan-kosong">
+
+        <div>
+            🖼️
+        </div>
+
+        <h2>
+            Galerimu masih kosong
+        </h2>
+
+        <p>
+            Yuk, buat foto pertama kamu!
+        </p>
+
+        <button
+            id="mulaiDariGaleriButton"
+            class="button button-primary">
+
+            📸 Mulai Foto
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FAVORIT
+===================================================== -->
+
+<section id="favoritPage" class="page">
+
+    <div class="halaman-header">
+
+        <div>
+
+            <span class="section-label">
+                KOLEKSI FAVORIT
+            </span>
+
+            <h1>
+                Foto Favorit ❤️
+            </h1>
+
+            <p>
+                Foto yang paling kamu suka.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div
+        id="gridFavorit"
+        class="grid-galeri">
+    </div>
+
+
+    <div
+        id="favoritKosong"
+        class="keadaan-kosong">
+
+        <div>
+            ❤️
+        </div>
+
+        <h2>
+            Belum ada foto favorit
+        </h2>
+
+        <p>
+            Tekan tombol ❤️ setelah membuat foto.
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     MODAL PREVIEW
+===================================================== -->
+
+<div
+    id="modalPreview"
+    class="modal">
+
+    <div class="modal-box">
+
+        <button
+            id="tutupModalButton"
+            class="tutup-modal">
+
+            ×
+
+        </button>
+
+
+        <img
+            id="gambarModal"
+            alt="Pratinjau foto">
+
+
+        <div class="modal-actions">
+
+            <button
+                id="unduhModalButton"
+                class="button button-primary">
+
+                ⬇️ Unduh
+
+            </button>
+
+
+            <button
+                id="favoritModalButton"
+                class="button button-secondary">
+
+                ❤️ Favorit
+
+            </button>
+
+
+            <button
+                id="hapusModalButton"
+                class="button button-danger">
+
+                🗑️ Hapus
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     NOTIFIKASI
+===================================================== -->
+
+<div
+    id="notifikasi"
+    class="notifikasi">
+
+    <span>
+        ✨
+    </span>
+
+    <p>
+        Selesai!
+    </p>
+
+</div>
+
+
+
+<canvas
+    id="kanvas"
+    hidden>
+</canvas>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
